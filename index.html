@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera página</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    h1{
+        color:red
+    }
+
+h2{
+    color:yellow
+}
+
+.boton-whatsapp{
+    display: inline-block;
+background-color: #25D366;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius: 8px;
+font-weight: bold;
+}
+
+.boton-whatsapp:hover{
+background-color:#1ebe5d;
+}
+
+.boton-instagram{
+    display:inline-block;
+    background-color:#E1306C;
+    color:white;
+    padding:12px 20px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.resaltado{
+    text-align: center;
+    color:rgb(251, 198, 99);
+}
+
+
+.boton-instagram:hover{
+    background-color: #c72a5b;
+}
+
+.propuestas1{
+color:white;
+text-align:right;
+background-color:#1e293b;
+max-width:500px;
+margin:auto;
+padding:30px;
+border-radius:10px;
+box-shadow:0px 10px 30px rgba(0,0,0,0.5);
+}
+
+
+    body{
+        text-align: center;
+    background-color: #0f172a;
+    color:peru;
+    font-family:'Poppins', sans-serif;
+    }
+    
+.propuestas2{
+    color:white;
+    text-align: left;
+    background-color:#1e293b;
+max-width:500px;
+margin:auto;
+padding:30px;
+border-radius:10px;
+box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+}
+    
+
+.contenedor-flex{
+display:flex;
+justify-content:center;
+height:200px;
+gap: 20px;
+align-items:center;
+
+}
+
+.caja{
+background:red;
+color:white;
+padding:20px;
+margin:10px;
+}
+
+.servicios{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap: wrap;
+}
+
+.tarjeta{
+background-color:#1e293b;
+padding:20px;
+width:90%;
+border-radius:10px;
+box-shadow:0px 10px 20px rgba(0,0,0,0.4);
+transition: 0.3s;
+}
+
+.tarjeta:hover{
+transform:translateY(-10px);
+}
+
+@media (max-width:700px){
+
+.servicios{
+flex-direction:column;
+align-items:center;
+}
+
+.tarjeta{
+width:80%;
+}
+
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+
+.servicios-section{
+padding:60px 20px;
+}
+
+
+.maquinaria{
+text-align:right;
+background-color:#1e293b;
+color:white;
+max-width:500px;
+margin:40px auto;
+padding:30px;
+border-radius:10px;
+box-shadow:0px 10px 30px rgba(0,0,0,0.5);
+}
+
+.contacto{
+text-align:left;
+margin-top:40px;
+padding:30px;
+}
+
+
+.hero{
+text-align:center;
+padding:100px 20px;
+}
+
+
+.hero h1{
+font-size:40px;
+margin-bottom:20px;
+color: white;
+}
+
+
+.hero p{
+font-size:22px;
+margin-bottom:0px;
+color:rgb(255, 0, 0);
+}
+
+    
+    .hero{
+text-align:center;
+padding:120px 20px;
+background-image:url("computadora.avif");
+background-size:cover;
+background-position:center;
+background-color: rgba(0,0,0,0.5);
+background-blend-mode: darken;
+}
+
+.navbar{
+    display: inline-block;
+    background-color: red;
+    padding: 8px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+
+}
+
+
+.navbar a {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color:rgb(133, 0, 0);
+}
+
+
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+<nav class="navbar">
+
+<a href="#hero">|Inicio|</a>
+<a href="#servicios">|Servicios|</a>
+<a href="#maquinaria">|Maquinaria|</a>
+<a href="#contacto">|Contacto|</a>
+
+</nav>    
+
+
+
+<div class="container">
+
+    <section id="hero" class="hero">
+
+
+<h1>Servicio Técnico Informático</h1>
+
+<p>Reparación, formateo y mantenimiento de computadoras.</p>
+
+
+</section>
+
+
+<div class="propuestas1">
+
+<h1>Pagina de prueba de ventas</h1>
+
+<p class="resaltado">Vendemos <strong><span style="color:whitesmoke;">TODO</span></strong> tipo de productos</p>
+
+<hr>
+
+<section id="servicios" class="servicios">
+
+
+<h2>Nuestros Servicios</h2>
+
+<div class="servicios">
+
+<div class="tarjeta">
+<img src="reparacion.jpeg" width="200">
+
+
+<h3>Reparación de PC</h3>
+<p>Solucionamos fallas de hardware y software.</p>
+<a class="boton-whatsapp" href="https://wa.me/2974932949">Consultar</a>
+</div>
+
+<div class="tarjeta">
+<img src="formateo.webp" width="200">
+<h3>Formateo</h3>
+<p>Instalamos Windows y dejamos tu PC como nueva.</p>
+<a class="boton-whatsapp" href="https://wa.me/2974932949">Consultar</a>
+</div>
+
+<div class="tarjeta">
+<img src="aplicaciones.jpg" width="200">
+<h3>Instalación de programas</h3>
+<p>Office, antivirus y programas esenciales.</p>
+<a class="boton-whatsapp" href="https://wa.me/2974932949">Consultar</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="maquinaria" class="maquinaria">
+
+
+<h2>Maquinaria</h2>
+<img src="herramientas.webp" width="300"alt="Repuestos">
+<ul>
+<li>Herramientas</li>
+<li>Repuestos</li>
+<li>Materiales</li>
+</ul>
+
+</section>
+
+<br>
+
+<div class="propuestas2">
+<h3>Servicios</h3>
+<img src="ingenieros.avif" width="300"alt="servicios">
+<ul>
+<li>Mantenimiento y limpieza</li>
+<li>Arreglo de wifi</li>
+<li>Cambio de aceite a vehiculos</li>
+</ul>
+
+</div>
+
+<section id="contacto" class="contacto">
+
+
+<h4>CONTACTANOS</h4>
+
+
+<a class="boton-whatsapp" href="https://wa.me/2974932949">
+Contactar por WhatsApp
+</a>
+<br> 
+<br>
+<a class="boton-instagram" href="https://www.instagram.com/mateo___martin/">
+Mi instagram
+</a>
+
+</section>
+
+
+<div class="contenedor-flex">
+
+<div class="caja">1</div>
+<div class="caja">2</div>
+<div class="caja">3</div>
+</div>
+
+
+<br>Encontranos en:
+<br>Mendoza Capital
+<br>El plumerillo
+<br>altura 12
+
+
+
+
+
+</div>
+</body>
+</html>
